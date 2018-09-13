@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Symfony Articles{% endblock %}
+
+{% block body %}
+    <div class="container mt-2">
+        <h1>{{ article.title }}</h1>
+        <p>{{ article.body }}</p>
+        <hr>
+        <a class="btn btn-primary" href="/">Go Back</a>
+    </div>
+{% endblock %}

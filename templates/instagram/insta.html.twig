@@ -1,0 +1,83 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Instagram Integration{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+      <ul class="nav nav-tabs">
+            <li class="nav-item">
+                  <a class="nav-link active show" data-toggle="tab" href="#embed">Embedding</a>
+            </li>
+            <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#json">JSON Response</a>
+            </li>
+            <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#iframe">IFrame</a>
+            </li>
+      </ul>
+      <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active show mt-2" id="embed">
+                  <div class="row" style="height:auto">
+                        <div class="col-sm">
+                              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Bkl5qbYgTm6/" data-instgrm-version="8" 
+                              style="max-width:458px; padding:0; width:99.375%;">
+                              </blockquote> 
+                        </div>
+                        <div class="col-sm">
+                              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Bi74Oo0HBpl/" data-instgrm-version="8" 
+                              style="max-width:458px; padding:0; width:99.375%;">
+                              </blockquote>
+                        </div>
+                        <div class="col-sm">
+                              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BhSD3f0FwUK/" data-instgrm-version="8" 
+                              style="max-width:458px; padding:0; width:99.375%;">
+                              </blockquote>
+                        </div>
+                        <div class="col-sm">
+                              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BkUpU5tFtAM/" data-instgrm-version="8" 
+                              style="max-width:458px; padding:0; width:99.375%; ">
+                              </blockquote>
+                        </div>
+                  </div>
+            </div>
+            <div class="tab-pane fade mt-2" id="json">
+                  <div class="row">
+                        <div class="col-sm" id="instagram">
+                              
+                        </div>
+                        <div class="col-sm">
+                                    
+                        </div>
+                        <div class="col-sm">
+                              
+                        </div>
+                        <div class="col-sm">
+                              
+                        </div>
+                  </div>
+            </div>
+            <div class="tab-pane fade mt-2" id="iframe">
+                  <div class="row">
+                        <div class="col-sm">
+                              <iframe src="https://www.instagram.com/p/Bkl5qbYgTm6/embed" width="240" height="300" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                        </div>
+                        <div class="col-sm">
+                              <iframe src="https://www.instagram.com/p/Bi74Oo0HBpl/embed" width="240" height="300" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                        </div>
+                        <div class="col-sm">
+                              <iframe src="https://www.instagram.com/p/BhSD3f0FwUK/embed" width="240" height="300" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                        </div>
+                        <div class="col-sm">
+                              <iframe src="https://www.instagram.com/p/BkUpU5tFtAM/embed" width="240" height="300" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <hr>
+      </div>
+{% endblock %}
+
+{% block javascripts %}
+<script async defer src="//www.instagram.com/embed.js"></script>
+<script src="/js/insta.js"></script>
+{% endblock %}
